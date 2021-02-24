@@ -4,10 +4,12 @@
     <div class="review-detail">
         <div class="review">
             <img src="{{ review.thumb.url }}" alt="">
-            <h2>{{ review.title }}</h2>
-            <p>{{ review.bookAuth }}</p>
-            <p> {{ review.body }} </p>
-            <p> {{ review.date }}</p>
+            <h2 class="book_title">{{ review.title }}</h2>
+            <p class="book_author"> -{{ review.bookAuth }}</p>
+            <p class="review_remarks"> {{ review.body }} </p>
+            <h4 class="book_user">Review By : {{review.author}}</h4>
+            <h5 class="review_date"> {{ review.date }}</h5>
+
         </div>
     </div>
 {% endblock %}

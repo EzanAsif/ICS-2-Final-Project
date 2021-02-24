@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="create-review">
-        <h2> Create an Awsome New review </h2>
+        <h2> Upload a review! </h2>
         <form action="{% url 'reviews:create' %}" class="site-form" enctype="multipart/form-data" method="POST">
             {% csrf_token %}
             {{ form }}
