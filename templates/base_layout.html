@@ -18,13 +18,13 @@
                     <li>
                         <form action="{% url 'accounts:logout' %}" method="post">
                             {% csrf_token %}
-                            <button type="submit">Logout</button>
+                            <button type="submit" class="logout">Logout</button>
                         </form>
                     </li>
                     <li><a class = "highlight" href="{% url 'reviews:create' %}">Create An Article </a></li>
                 {% else %}
-                    <li><a href="{% url 'accounts:login' %}">Login</a></li>
-                    <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
+                    <li><a href="{% url 'accounts:login' %}" class="login">Login</a></li>
+                    <li><a href="{% url 'accounts:signup' %}" class="signup">Signup</a></li>
                 {% endif %}
             </ul>
         </nav>

@@ -17,7 +17,7 @@
         {% for review in reviews %}
             <div class="book-container">
                     <a href="{% url 'reviews:detail'  slug=review.slug %}"><img src={{review.thumb.url}} /></a>
-                    <p>{{review.title}}</p>
+                    <p class="book-title">{{review.title}}</p>
                     <p class="auth-name">-{{ review.bookAuth }}</p>
             </div>
         {% endfor %}
