@@ -126,7 +126,13 @@ body{
     text-decoration: none !important;
 }
 
+.review-detail{
+    margin-top: 80px;
+}
 
+.create-review{
+    margin-top: 80px;
+}
 
 @media(max-width: 1500px) {
     .reviews div {
