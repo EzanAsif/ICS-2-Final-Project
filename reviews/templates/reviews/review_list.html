@@ -1,0 +1,25 @@
+{% extends 'base_layout.html' %}
+
+{% block content%}
+    <div class="main">
+        <h1 class="qoute">
+            “ 
+            <br>
+            IF YOU DON'T LIKE TO <br>READ, YOU HAVE'NT<br>FOUND A RIGHT BOOK.
+            ”
+        </h1>
+        <h3 class="name">
+            -J.K Rowling
+        </h3>
+    </div>
+    <h1 class="book-heading">BOOK REVIEWS</h1>
+    <div class="reviews">
+        {% for review in reviews %}
+            <div class="book-container">
+                    <a href="{% url 'reviews:detail'  slug=review.slug %}"><img src={{review.thumb.url}} /></a>
+                    <p>{{review.title}}</p>
+                    <p class="auth-name">-{{ review.bookAuth }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

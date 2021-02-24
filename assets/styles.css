@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.wrapper-1 h1{
+    width: max-content;
+    float: left;
+    margin: 20px 0px 0px 50px;
+}
+
+.wrapper-1 nav{
+    float: right;
+    margin: 0px 100px 0px 0px;
+    width: 400px;
+}
+
+.wrapper-1 nav ul{
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.main{
+    height: 97vh !important;
+    background-image: url('./banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    width: 100%;
+}
+
+.qoute{
+    position: absolute;
+    font-size: 3.3vw;
+    margin: 13rem 0px 0px 27rem;
+    font-family: 'Raleway', sans-serif;
+}
+.name{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin: 30rem 0px 0px 27rem;
+}
+
+.book-heading {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 95px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    text-decoration: none !important;
+    width: 100%;
+}
+
+.reviews div {
+    width: 400px;
+    text-align: center;
+    margin: 0px 10px 45px 10px;
+    height: 600px;
+    text-decoration: none !important;
+    border: 3px #bdbdbd solid;
+    border-radius: 15px;
+}
+
+.reviews div img {
+    width: 100%;
+    margin-bottom: 7px;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.reviews div .book-title{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.reviews div .auth-name{
+    text-transform: uppercase;
+    color: #7d7d7d;
+    text-decoration: none !important;
+}
+
+
+
+@media(max-width: 1500px) {
+    .reviews div {
+        width: 400px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .reviews div img {
+        width: 230px;
+    }
+
+    .reviews div {
+        width: 350px;
+    }
+}
+
+@media(max-width: 870px) {
+    .reviews div img {
+        width: 200px;
+    }
+
+    .reviews div {
+        width: 270px;
+    }
+}
