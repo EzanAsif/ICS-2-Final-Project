@@ -251,6 +251,32 @@ body{
     padding: 5px;
 }
 
+footer{
+    max-width: 100%;
+    background-color: black;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+footer p{
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: gold;
+}
+
+footer p span{
+    font-weight: normal;
+    font-size: 20px;
+    color: gold ;
+    text-transform: none !important;
+    margin-top: 10px;
+}
+
 
 @media(max-width: 1500px) {
     .reviews div {
